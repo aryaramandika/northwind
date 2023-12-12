@@ -19,10 +19,9 @@
 -- Table structure for table `barang`
 --
 
-DROP TABLE IF EXISTS 'barang';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'barang' (
+CREATE TABLE barang (
   'kdbrg' char(5) DEFAULT NULL,
   'nama' varchar(10) DEFAULT NULL,
   'satuan' varchar(10) DEFAULT NULL,
@@ -45,10 +44,9 @@ UNLOCK TABLES;
 -- Table structure for table `detailtransaksi`
 --
 
-DROP TABLE IF EXISTS 'detailtransaksi';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'detailtransaksi' (
+CREATE TABLE detailtransaksi (
   'notransaksi' char(3) DEFAULT NULL,
   'kdbrg' char(5) DEFAULT NULL,
   'hargajual' int(11) DEFAULT NULL,
@@ -70,10 +68,9 @@ UNLOCK TABLES;
 -- Table structure for table `transaksibeli`
 --
 
-DROP TABLE IF EXISTS 'transaksibeli';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'transaksibeli' (
+CREATE TABLE transaksibeli (
   'notransaksi' char(3) DEFAULT NULL,
   'tgltransaksi' date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -93,10 +90,9 @@ UNLOCK TABLES;
 -- Table structure for table `transaksijual`
 --
 
-DROP TABLE IF EXISTS 'transaksijual';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'transaksijual' (
+CREATE TABLE transaksijual (
   'notransaksi' char(3) DEFAULT NULL,
   'tgltransaksi' date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
