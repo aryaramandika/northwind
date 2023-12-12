@@ -15,8 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-create table penjualan;
-use penjualan;
 --
 -- Table structure for table `barang`
 --
@@ -24,7 +22,7 @@ use penjualan;
 DROP TABLE IF EXISTS 'barang';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `barang` (
+CREATE TABLE 'barang' (
   'kdbrg' char(5) DEFAULT NULL,
   'nama' varchar(10) DEFAULT NULL,
   'satuan' varchar(10) DEFAULT NULL,
